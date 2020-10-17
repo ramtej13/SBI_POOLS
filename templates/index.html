@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+  
+
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <html lang="en">
+<head>
+  <title>USER REQUIREMENTS FORM</title>
+  <style>
+    .border-2-left 
+    {
+      border-left: 2px solid;
+    }
+    .border-2-right {
+      border-right: 2px solid;
+    }
+    .border-2-top {
+      border-top: 2px solid;
+    }
+    .border-2-bottom {
+      border-bottom: 2px solid;
+    }
+  </style>
+  </head>
+<body>
+<img src="https://static.wixstatic.com/media/8e5840_ada253104dc14a75b14afa0e23349d60~mv2.png" class="rounded mx-auto d-block" alt="SBI The Banker to Every Indian" width=15% height=auto>
+  <h3 class="text-center text-info">USER REQUIREMENTS FORM</h3>
+
+  <div class="container" >
+    <form method="POST">
+      {% csrf_token %}
+    <div class="row">
+            {% csrf_token %}
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-1 border-2-top border-2-bottom border-2-left"><b>(A)</b></div>
+          <div class="col-md-6 border-2-top border-2-bottom"><b><u>LIABILITIES IN INDIA</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <b><u>Amount</u></b></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left ">1</div>
+          <div class="col-md-6 "><b><u>Paid up capital</u></b><br>(including *forfeited shares)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="paid_up_capital_1" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left">2</div>
+          <div class="col-md-6 "><b><u>Reserves Funds & Other Reserves</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Reserves_Funds" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">2.1 Reserve Fund </div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input type=number name="Reserve_Fund_2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">2.2 Other Reserves </div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input type=number name="Other_Reserves_2" ></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">2.3 Share Premium Accounts </div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Share_Premium_Accounts_2" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left">3</div>
+          <div class="col-md-6 "><b><u>Deposits</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Deposits_3" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">3.1 Current Deposits</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Current_Deposits_3" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">3.1.1 From Banks (including Co-op. Banks)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="From_Banks1" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">3.1.2 From Others</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="From_Others" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">3.2 Savings Deposits</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Savings_Deposits" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">3.3 Fixed Deposits ( including cash certificates,recurring deposits,etc.)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Fixed_Deposits_33" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">3.3.1 From Banks (including Co-op. Banks)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="From_Banks331" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">3.3.2 From Others</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="From_Others332" type=number></div>
+        </div>
+          <div class="row">
+            <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">3.2 Savings Deposits</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Savings_Deposits32" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left">4</div>
+          <div class="col-md-6 " ><b><u>Borrowings</u></b>$</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Borrowings_4" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">4.1 Borrowings from Banks in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name=Borrowings_from_Banks_in_India_4 type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.1.1 Reserve Bank of India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Reserve_Bank_of_India_4" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em"><br>4.1.2 State Bank of India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="State_Bank_of_India_4" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.1.3 Associates of the State Bank of India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Associates_of_the_State_Bank_of_India_4" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.1.4 Other Commercial Banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Other_Commercial_Bank_4" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.1.5 Co-operative Banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Co_operative_Banks4" type=number></div>
+        </div>      
+          <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">4.2 Borrowings from Banks outside India </div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Borrowings_from_Banks_outside_India4" type=number></div>
+        </div>    
+            <div class="row">
+              <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">4.3 Borrowings from financial institution in india </div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Borrowings_from_financial_institution_in_india4" type=number></div>
+        </div>       
+         <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.3.1  IDBI & SIDBI</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="IDBI_SIDBI4" type=number></div>
+        </div> 
+               <div class="row">
+                <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.3.2 National Bank for Agriculture & Rural Development</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="National_Bank_for_Agriculture_Rural_Development4" type=number></div>
+        </div>
+              <div class="row">
+                <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.3.3 Export Import Bank of India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Export_Import_Bank_of_India4" type=number></div>
+        </div>       
+         <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">4.3.4 Other Financial Institutions/NHB</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Other_Financial_Institutions_NHB4" type=number></div>
+        </div>
+                <div class="row">
+                  <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">4.4 Borrowings from Financial Institution outside India	</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Borrowings_from_Financial_Institution_outside_India4" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left">5</div>
+          <div class="col-md-6 "><b><u>Other Liabilities</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Other_Liabilities5" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em"> 5.1 Bills payable in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Bills_payable_in_India5" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">5.1.1 Drawn by Indian Offices</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Drawn_by_Indian_Offices5"type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1  border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:2em">5.1.2 Drawn by Foreign<br> Offices *</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Drawn_by_Foreign5" type=number></div>
+        </div>        
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">5.2 Bills payable outside India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Bills_payable_outside_India_5" type=number></div>
+        </div>     
+           <div class="row">
+            <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">5.3 Calls received in advance*</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Calls_received_in_advance_5" type=number></div>
+        </div>
+         <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">5.4 Miscellaneous liabilities</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Miscellaneous_liabilities_5"  type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"><br>6</div>
+          <div class="col-md-6 "><b><u><br>Branch Adjustments </u></b>@</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Branch_Adjustments_6" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">6.1 Among offices in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Among_offices_in_India_6" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "style="text-indent:1em">6.2 With offices outside <br>India **</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="With_offices_outside_6" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left">7</div>
+          <div class="col-md-6 "><b><u>Total Demand & Time<br> liabilities</u></b>i.e
+          <br><br>Total of items A3, A4 & A5</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Total_Demand_Time_7" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left">8</div>
+          <div class="col-md-6 "><b><u>Balance of profit </u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Balance_of_profit_8" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Balance_of_profit_1" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Balance_of_profit_2" type=number></div>
+        </div>
+        <div class="row">
+         <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><br><input name="Balance_of_profit_3" type=number></div>
+        </div><div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Balance_of_profit_4" type=number></div>
+        </div><div class="row">
+          <div class="col-md-1 border-2-left"></div>
+          <div class="col-md-6 "></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"><input name="Balance_of_profit_5" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-top border-2-bottom border-2-left"></div>
+          <div class="col-md-6 border-2-top border-2-bottom "> Total Liabilities</div>
+          <div class="col-md-4 border-2-top border-2-bottom border-2-left border-2-right"><input name="Total_Liabilities" type=number></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-1 border-2-top border-2-bottom border-2-left"><b>(B)</b></div>
+          <div class="col-md-6 border-2-top border-2-bottom"><b><u>ASSETS IN INDIA</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <b><u>Amount</u></b></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 border-2-left ">1</div>
+            <div class="col-md-6 "><b><u>Cash in hand </u></b></div>
+            <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Cash_in_hand" type=number> </div>
+          </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left ">2</div>
+          <div class="col-md-6 "><b><u>Balances with the Reserve Bank of India </u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Balances_with_the_Reserve_Bank_of_India" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left ">3</div>
+          <div class="col-md-6 "><b><u>Balances with other Banks in India in Current Account</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Balances_with_other_Banks_in_India_in_Current_Account" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">3.1 State Bank of India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="SBI31" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">3.2 Associates of the State Bank of India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Associates_of_the_State_Bank_of_India" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">3.3 Other Commercial Banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Other_Commercial_Banks" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">3.4 Co-operative Banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Co_operative_Banks34" type=number> </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-1 border-2-left ">4</div>
+          <div class="col-md-6 "><b><u>Money at call & Short Notice</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Money_at_call_Short_Notice" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">4.1 With Commerical Banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="With_Commerical_Banks" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">4.2 With Co-operative Banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="With_Co_operative_Banks" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">4.3 With Other Financial Institutions</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="With_Other_Financial_Institutions" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left ">5</div>
+          <div class="col-md-6 "><b><u>Investments</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Investments" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.1 Treasury Bills</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Treasury_Bills" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.2 Other Central Government Securites  (including Treasury/Savings Deposit certificates & Postal Savings Certificates & Deposits)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Other_Central_Government_Securites" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.3 State Government Securities</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="State_Government_Securities" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.4 Other approved securities</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Other_approved_securities" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.5 Shares & debentures of companies & corporations not included in 5.4 above</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Shares_debentures_of_companies" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.6 Fixed Deposits with Banks ( including Co-operative Banks)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Fixed_Deposits_with_Banks" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">5.7 Other Investments in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Other_Investments_in_India" type=number> </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-1 border-2-left ">6</div>
+          <div class="col-md-6 "><b><u>Bills purchased & discounted</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Bills_purchased" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">6.1 Inland bills purchased & discounted</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Inland_bills_purchased" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">6.2 Foreign Bills purchased & discounted</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Foreign_Bills_purchased" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:2em"> 6.2.1 Export bills drawn in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Export_bills_drawn_in_India" type=number> </div>
+        </div>        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:2em"> 6.2.2 Import Bills drawn on & payable in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Import_Bills_drawn_on_payable_in_India" type=number></div>
+        </div>        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:2em">6.2.3 Other Foreign bills purchase & discounted</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Other_Foreign_bills_purchase_discounted" type=number> </div>
+        </div>        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:3em">6.2.3.1 Payable in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Payable_in_India" type=number> </div>
+        </div>        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:3em">6.2.3.2 Payable outside India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Payable_outside_India" type=number> </div>
+        </div>
+              {% csrf_token %}
+
+        <div class="row">
+          <div class="col-md-1 border-2-left ">7</div>
+          <div class="col-md-6 "><b><u>Loans & Advances</u></b></div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Loans_Advances" type=number> </div>
+        </div>    
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">*7.1 Loans & advances, cash credis & overdrafts (excluding due from banks vide 7.2 below)</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Loans_advances_cash_credis_overdrafts" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">7.2 Due from banks</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Due_from_banks" type=number> </div>
+        </div>  
+              <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:2em">7.2.1 Co-operative banks in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Co_operative_banks_in_India" type=number> </div>
+        </div>  
+              <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:2em">7.2.2 Commercial Banks in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Commercial_Banks_in_India" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:2em">7.2.3 Banks Outside India +</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Banks_Outside_India" type=number> </div>
+        </div>
+      <div class="row">
+          <div class="col-md-1 border-2-left ">8</div>
+          <div class="col-md-6 ">Premised, Furniture, Fixtures & other fixed assets</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Premised" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left ">9</div>
+          <div class="col-md-6 "><b><u>Branch adjustments </u></b>@</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Branch_adjustments" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">9.1 Among offices in India</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Among_offices_in_India" type=number></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-left "></div>
+          <div class="col-md-6" style="text-indent:1em">9.2 With offices outside India **</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="With_offices_outside_India" type=number> </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-1 border-2-left ">#</div>
+          <div class="col-md-6 ">
+            Capitalised Expenses including preliminary expenses,
+            Organisational expenses, shares selling, commission,
+            brokerage, loss incurred & any other expenditure not
+            represented by tangible assets ***</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Capitalised" type=number> </div>
+        </div>
+              {% csrf_token %}
+
+        <div class="row">
+          <div class="col-md-1 border-2-left ">#</div>
+          <div class="col-md-6 "> Non-banking assets acquired in satisfaction of claims</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Non_banking" type=number> </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-1 border-2-left ">#</div>
+          <div class="col-md-6 ">Other tangible assets</div>
+          <div class="col-md-4 border-2-top border-2-left border-2-right"> <input name="Other_tangible_assets" type=number> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 border-2-top border-2-bottom border-2-left "></div>
+          <div class="col-md-6 border-2-top border-2-bottom ">Total Assets</div>
+          <div class="col-md-4 border-2-top border-2-bottom border-2-left border-2-right"><input name="Total_Assets" type=number></div>
+        </div>
+      </div>
+    </div>
+            {% csrf_token %}
+
+      <div style="margin:5%"></div>
+      <button class="btn btn-secondary" type="submit">submit</button>
+    </form>
+  </div>
+
+  <br/><br/><br/>
+
+</body>
+</html>
